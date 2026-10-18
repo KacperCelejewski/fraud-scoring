@@ -1,0 +1,72 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# --- Virtual envs / uv ---
+.venv/
+venv/
+env/
+# uv.lock IS committed (reproducible builds) - do not ignore it
+
+# --- Tooling caches ---
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Data & models (never committed - Kaggle licence, size) ---
+data/
+*.csv
+*.parquet
+*.zip
+models/
+*.pkl
+*.joblib
+*.lgb
+
+# --- MLflow ---
+mlruns/
+mlartifacts/
+mlflow.db
+
+# --- AWS CDK ---
+cdk.out/
+cdk.context.json.bak
+.cdk.staging/
+
+# --- LocalStack / docker volumes ---
+.localstack/
+volume/
+
+# --- Secrets (constitution: no secrets in repo) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+kaggle.json
+
+# --- OS / IDE ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
